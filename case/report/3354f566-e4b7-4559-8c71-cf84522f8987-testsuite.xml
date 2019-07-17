@@ -1,0 +1,25 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1563108415199" stop="1563108415199">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1563108415199" status="broken" stop="1563108415199">
+      <name>test_login01</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>ImportError while importing test module 'C:\Users\李书利\Desktop\day09_bnal01\case\test_login01.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+test_login01.py:7: in &lt;module&gt;
+    from page.page_in import PageIn
+..\page\page_in.py:2: in &lt;module&gt;
+    from tool.driver import GetDriver
+E   ModuleNotFoundError: No module named 'tool'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

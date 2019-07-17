@@ -1,0 +1,36 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1563108757977" stop="1563108757977">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1563108757977" status="broken" stop="1563108757977">
+      <name>test_login1</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>case\test_login1.py:8: in &lt;module&gt;
+    from page.page_in import PageIn
+page\page_in.py:5: in &lt;module&gt;
+    class PageIn(object):
+page\page_in.py:6: in PageIn
+    driver = GetDriver().get_driver()
+tools\driver.py:25: in get_driver
+    cls._driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+..\..\appdata\local\programs\python\python36\lib\site-packages\appium\webdriver\webdriver.py:36: in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+..\..\appdata\local\programs\python\python36\lib\site-packages\selenium\webdriver\remote\webdriver.py:87: in __init__
+    self.start_session(desired_capabilities, browser_profile)
+..\..\appdata\local\programs\python\python36\lib\site-packages\selenium\webdriver\remote\webdriver.py:141: in start_session
+    'desiredCapabilities': desired_capabilities,
+..\..\appdata\local\programs\python\python36\lib\site-packages\selenium\webdriver\remote\webdriver.py:201: in execute
+    self.error_handler.check_response(response)
+..\..\appdata\local\programs\python\python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py:181: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.yunmall.lc' application. Original error: Error executing adbExec. Original error: 'Command 'C\:\\android-sdk\\platform-tools\\adb.exe -P 5037 -s 192.168.230.101\:5555 shell am start -W -n com.yunmall.lc/com.yunmall.ymctoc.ui.activity.WebViewActivity -S' timed out after 20000ms'; Stderr: ''; Code: 'null'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

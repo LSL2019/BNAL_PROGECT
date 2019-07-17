@@ -1,0 +1,7 @@
+{
+  "case/test_login.py": true,
+  "case/test_login.py::TestLogin": true,
+  "case/test_login.py::TestLogin::()::test_login": true,
+  "case/test_login01.py": true,
+  "case/test_login1.py": true
+}
